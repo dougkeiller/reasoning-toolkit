@@ -1,0 +1,10 @@
+{
+  "name": "reasoning-toolkit",
+  "owner": { "name": "Doug Keiller" },
+  "metadata": { "description": "Decision and reasoning skills for Claude Code", "version": "1.0.0" },
+  "plugins": [
+    { "name": "reasoning-toolkit", "source": "./", "version": "0.3.0",
+      "description": "Eight decision and reasoning skills, including a decision matrix with real sensitivity analysis",
+      "keywords": ["decision", "reasoning", "pre-mortem"] }
+  ]
+}
