@@ -105,6 +105,8 @@ result more than uncertain weights do.
 
 ## Stage 6 — Run the engine
 
+If `${CLAUDE_PLUGIN_ROOT}/scripts/sensitivity.py` is not present (the directory version ships without scripts; the full version is on GitHub), do the sensitivity analysis by hand: recompute the ranking under each single-weight swing of ±20%, under equal weights, and with each uncertain score moved one point either way, and report which changes flip the winner.
+
 Write the spec as JSON and run:
 
 ```bash

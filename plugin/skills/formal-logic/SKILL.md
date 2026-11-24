@@ -71,6 +71,8 @@ must precede start."
 
 ## Stage 3 — Run the engine
 
+If `${CLAUDE_PLUGIN_ROOT}/scripts/entail.py` is not present (the directory version ships without scripts; the full version is on GitHub), check entailment by hand: write a truth table over the boolean variables, or search for one counterexample assignment, and show it.
+
 ```bash
 python3 ${CLAUDE_PLUGIN_ROOT}/scripts/entail.py spec.json
 ```
