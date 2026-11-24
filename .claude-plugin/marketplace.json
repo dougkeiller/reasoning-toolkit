@@ -11,7 +11,7 @@
     {
       "name": "reasoning-toolkit",
       "source": "./plugin",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "description": "Eight decision and reasoning skills, including a decision matrix with real sensitivity analysis",
       "keywords": [
         "decision",

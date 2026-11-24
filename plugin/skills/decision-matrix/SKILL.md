@@ -4,14 +4,14 @@ description: >
   Score options against weighted criteria and then actually test whether the
   answer survives different priorities, using real sensitivity analysis rather
   than an assertion that the result is robust. Use whenever choosing between
-  named alternatives: vendor and platform selection, build vs buy, hiring
-  between finalists, which market or segment to enter, which initiative to fund,
+  named alternatives: vendor and platform selection, build vs buy, which market or segment to enter, which initiative to fund,
   choosing between offers or sites or partners. Also use when someone has
   already built a scoring spreadsheet and wants to know whether to trust it, or
   when a decision keeps getting re-litigated. Trigger on "which should we pick",
   "compare these options", "weighted scoring", "decision matrix", "help me
   choose between", "score these vendors", "we keep going back and forth on
-  this", "does this decision hold up".
+  this", "does this decision hold up". Not for scoring, ranking or screening
+  people, such as job candidates or applicants.
 ---
 
 # Decision Matrix
