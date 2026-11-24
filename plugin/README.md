@@ -48,3 +48,9 @@ Each run writes `reasoning-notes/YYYY-MM-DD-<subject>-<tool>.md` in the folder o
 ## Origin
 
 Modelled on the eight tools at reasoning.services, rebuilt as local skills. The companion [research-toolkit](https://github.com/dougkeiller/research-toolkit) uses Decision Matrix for its shortlist cut.
+
+## Engines without script files
+
+Anthropic's plugin directory accepts script files only from verified publishers, so the plugin carries no scripts. The decision-matrix and formal-logic engines ship as code inside `references/sensitivity-engine.md` and `references/logic-engine.md`; Claude saves and runs them wherever it can run Python, with the same results as the source scripts in `scripts/` (tested 2026-11-24: byte-identical code and identical output). If no Python is available, the skills fall back to a by-hand method and say so.
+
+Without the z3 solver installed, formal-logic uses a brute-force fallback: exact for yes/no variables, bounded for numbers, and the report says which engine ran.

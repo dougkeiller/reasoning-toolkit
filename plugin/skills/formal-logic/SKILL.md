@@ -71,10 +71,10 @@ must precede start."
 
 ## Stage 3 — Run the engine
 
-If `${CLAUDE_PLUGIN_ROOT}/scripts/entail.py` is not present (the directory version ships without scripts; the full version is on GitHub), check entailment by hand: write a truth table over the boolean variables, or search for one counterexample assignment, and show it.
+The engine's code is in `${CLAUDE_PLUGIN_ROOT}/references/logic-engine.md`, as a z3 version and a no-dependency fallback. Read it, save the block it tells you to use, then run it as below (use `entail_fallback.py` in place of `entail.py` when z3 is missing). Only if nothing here can run Python, check entailment by hand with a truth table or a counterexample, and say in the note that the engine was not run.
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/entail.py spec.json
+python3 entail.py spec.json
 ```
 
 ```json

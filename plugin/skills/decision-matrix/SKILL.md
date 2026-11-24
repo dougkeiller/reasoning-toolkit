@@ -105,16 +105,16 @@ result more than uncertain weights do.
 
 ## Stage 6 — Run the engine
 
-If `${CLAUDE_PLUGIN_ROOT}/scripts/sensitivity.py` is not present (the directory version ships without scripts; the full version is on GitHub), do the sensitivity analysis by hand: recompute the ranking under each single-weight swing of ±20%, under equal weights, and with each uncertain score moved one point either way, and report which changes flip the winner.
+The engine's code is in `${CLAUDE_PLUGIN_ROOT}/references/sensitivity-engine.md`. Read it, save its `sensitivity.py` block to your working folder as it says, then run it as below. Only if nothing here can run Python, do the sensitivity analysis by hand (each single weight moved ±20%, equal weights, each uncertain score moved one point either way, and which changes flip the winner) and say in the note that the engine was not run.
 
 Write the spec as JSON and run:
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/sensitivity.py spec.json
+python3 sensitivity.py spec.json
 ```
 
 The engine needs numpy. If `python3` does not have it, the script says so; run
-it as `uv run --with numpy python ${CLAUDE_PLUGIN_ROOT}/scripts/sensitivity.py spec.json`.
+it as `uv run --with numpy python sensitivity.py spec.json`.
 
 Spec format:
 
