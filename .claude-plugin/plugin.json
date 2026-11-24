@@ -11,5 +11,6 @@
     "pre-mortem",
     "post-mortem",
     "critical-thinking"
-  ]
+  ],
+  "license": "MIT"
 }
